@@ -11,6 +11,7 @@ body {
     line-height: 1.8;
 }
 p {
+    font-family: $fuente_parrafo;
     color: $negro;
     font-size: 2rem;
 }
@@ -19,17 +20,14 @@ p {
     max-width: 120rem;
     margin: 0 auto;
 }
-
 a {
     text-decoration: none;
 }
-
 img,
 picture {
     width: 100%;
     display: block;
 }
-
 h1, h2, h3 {
     font-family: $fuente_principal;
     margin: $separacion / 2 0;
@@ -37,7 +35,6 @@ h1, h2, h3 {
     text-align: center;
     
 }
-
 h1 {
     font-size: 3.8rem;
 }
