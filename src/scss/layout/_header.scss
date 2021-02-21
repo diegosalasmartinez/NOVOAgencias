@@ -2,7 +2,7 @@
     background-color: $azulOscuro;
 
     img{
-        height: 10rem;
+        height: 7rem;
         width: auto;
     }
 }
@@ -11,9 +11,17 @@
     padding: $separacion / 2 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    @include tablet{
+    }
 
     a{
-        margin-right: $separacion / 2;
+        margin-right: $separacion / 3;
+        
+        &:last-of-type{
+            margin-right: 0;
+        }
 
         h1{
             color: $blanco;
@@ -21,3 +29,20 @@
         }
     }
 }
+
+    .imagen-portada{
+        background-color: $azul;
+        background-image: url(../img/portada1.webp);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        min-height: 20rem;
+        @include tablet{
+            min-height: 40rem;
+        }
+        @include desktop{
+            min-height: 50rem;
+        }
+        width: auto;
+    }
