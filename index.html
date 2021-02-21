@@ -67,6 +67,16 @@
                     <source srcset="build/img/servicio2.jpg" type="image/jpeg">
                     <img src="build/img/servicio2.jpg" alt="Nosotros" loading="lazy">
             </div>
+            <div class="galeria-imagen">
+                <source srcset="build/img/img3.webp" type="image/webp">
+                    <source srcset="build/img/img3.jpg" type="image/jpeg">
+                    <img src="build/img/img3.jpg" alt="Nosotros" loading="lazy">
+            </div>
+            <div class="galeria-imagen">
+                <source srcset="build/img/img4.webp" type="image/webp">
+                    <source srcset="build/img/img4.jpg" type="image/jpeg">
+                    <img src="build/img/img4.jpg" alt="Nosotros" loading="lazy">
+            </div>
         </div>
     </section>
 
@@ -86,5 +96,28 @@
         </div>
     </section>
 
+    <section id="contacto" class="contacto">
+        <h1>Contacto</h1>
+        <div class="formulario contenedor">
+            <form>
+                <div class="campo">
+                    <label class="campo__label" for="nombre">Nombre y Apellido</label>
+                    <input class="campo__field" type="text" placeholder="Ingresar Nombre" id="nombre">
+                </div>
+                <div class="campo">
+                    <label class="campo__label" for="email">Email</label>
+                    <input class="campo__field" type="email" placeholder="Ingresar Correo" id="email">
+                </div>
+                <div class="campo">
+                    <label class="campo__label" for="mensaje">Mensaje</label>
+                    <textarea class="campo__field campo__field--textarea" placeholder="Cuéntanos sobre tu proyecto" id="mensaje"></textarea>
+                </div>
+                <div class="campo">
+                    <input type="submit" value="Enviar" class="boton">
+                </div>
+            </form>
+        </div>
+    </section>
+    
 </body>
 </html>
