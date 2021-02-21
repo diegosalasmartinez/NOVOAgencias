@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    
+    margin-bottom: 0;
+
     @include tablet{
         flex-direction: row;
         justify-content: space-between;

@@ -1,0 +1,50 @@
+.nosotros{
+    p{
+        margin-top: 0;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.nosotros-contenido{
+    display: block;
+    align-items: center;
+    
+    @include tablet{
+        display: grid;
+        gap: $separacion / 2;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    @include desktop{
+        gap: $separacion;
+    }
+    
+    .nosotros-imagen{
+        padding: 0;
+        margin-bottom: 2rem;
+
+        @include tablet{
+            padding: 0 2rem;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+    
+    .nosotros-info{
+        text-align: justify;
+        
+        p{
+            &:last-of-type{
+                margin-bottom: $separacion;
+                
+                @include tablet{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

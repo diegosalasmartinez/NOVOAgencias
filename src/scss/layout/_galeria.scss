@@ -1,0 +1,15 @@
+.galeria-imagenes{
+    @include tablet{
+        @include grid(2,$separacion);
+    }
+
+    .galeria-imagen{
+        padding: 0 $separacion / 2;
+        margin-bottom: 2rem;
+        
+        @include tablet{
+            margin-bottom: 0;
+        }
+    
+    }
+}
