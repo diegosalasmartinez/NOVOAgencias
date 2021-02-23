@@ -7,7 +7,15 @@
     
     .formulario-imagen{
         padding: 0 $separacion / 2;
+        display: none;
         
+        @include tablet{
+            display: block;
+        }
+        @include desktop{
+            display: block;
+        }
+
         img{
             height: 100%;
             max-height: 618.95px;

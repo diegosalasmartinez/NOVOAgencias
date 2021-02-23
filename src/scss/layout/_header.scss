@@ -1,6 +1,5 @@
 .header{
     background-color: $azulOscuro;
-
     img{
         height: 7rem;
         width: auto;
@@ -8,7 +7,7 @@
 }
 
 .logo{
-    padding: $separacion / 2 0;
+    padding: $separacion / 3 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,19 +29,19 @@
     }
 }
 
-    .imagen-portada{
-        background-color: $azul;
-        background-image: url(../img/portada1.webp);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        
-        min-height: 20rem;
-        @include tablet{
-            min-height: 40rem;
-        }
-        @include desktop{
-            min-height: 50rem;
-        }
-        width: auto;
+.imagen-portada{
+    background-color: $azul;
+    background-image: url(../img/portada1.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 20rem;
+    width: auto;
+    @include tablet{
+        min-height: 40rem;
     }
+
+    @include desktop{
+        min-height: 50rem;
+    }
+}
