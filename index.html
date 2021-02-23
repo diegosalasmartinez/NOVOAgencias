@@ -40,8 +40,8 @@
         <div class="nosotros-contenido">
             <div class="nosotros-imagen">
                 <source srcset="build/img/img2.webp" type="image/webp">
-                    <source srcset="build/img/img2.jpg" type="image/jpeg">
-                    <img src="build/img/img2.jpg" alt="Nosotros" loading="lazy">
+                <source srcset="build/img/img2.jpg" type="image/jpeg">
+                <img src="build/img/img2.jpg" alt="Nosotros" loading="lazy">
             </div>
             <div class="nosotros-info">
                 <p>Lorem ipsum dolor sit amet ccinnctio dolor quis, voluptas perferendis sapiente qui aliquid laboriosam consectetur rem voluptatem iusto dolore.</p>
@@ -59,23 +59,23 @@
         <div class="galeria-imagenes">
             <div class="galeria-imagen">
                 <source srcset="build/img/servicio1.webp" type="image/webp">
-                    <source srcset="build/img/servicio1.jpg" type="image/jpeg">
-                    <img src="build/img/servicio1.jpg" alt="Nosotros" loading="lazy">
+                <source srcset="build/img/servicio1.jpg" type="image/jpeg">
+                <img src="build/img/servicio1.jpg" alt="Nosotros" loading="lazy">
             </div>
             <div class="galeria-imagen">
                 <source srcset="build/img/servicio2.webp" type="image/webp">
-                    <source srcset="build/img/servicio2.jpg" type="image/jpeg">
-                    <img src="build/img/servicio2.jpg" alt="Nosotros" loading="lazy">
+                <source srcset="build/img/servicio2.jpg" type="image/jpeg">
+                <img src="build/img/servicio2.jpg" alt="Nosotros" loading="lazy">
             </div>
             <div class="galeria-imagen">
                 <source srcset="build/img/img3.webp" type="image/webp">
-                    <source srcset="build/img/img3.jpg" type="image/jpeg">
-                    <img src="build/img/img3.jpg" alt="Nosotros" loading="lazy">
+                <source srcset="build/img/img3.jpg" type="image/jpeg">
+                <img src="build/img/img3.jpg" alt="Nosotros" loading="lazy">
             </div>
             <div class="galeria-imagen">
                 <source srcset="build/img/img4.webp" type="image/webp">
-                    <source srcset="build/img/img4.jpg" type="image/jpeg">
-                    <img src="build/img/img4.jpg" alt="Nosotros" loading="lazy">
+                <source srcset="build/img/img4.jpg" type="image/jpeg">
+                <img src="build/img/img4.jpg" alt="Nosotros" loading="lazy">
             </div>
         </div>
     </section>
@@ -85,13 +85,13 @@
         <div class="galeria-imagenes">
             <div class="galeria-imagen">
                 <source srcset="build/img/trabajo1.webp" type="image/webp">
-                    <source srcset="build/img/trabajo1.jpg" type="image/jpeg">
-                    <img src="build/img/trabajo1.jpg" alt="Nosotros" loading="lazy">
+                <source srcset="build/img/trabajo1.jpg" type="image/jpeg">
+                <img src="build/img/trabajo1.jpg" alt="Nosotros" loading="lazy">
             </div>
             <div class="galeria-imagen">
                 <source srcset="build/img/trabajo2.webp" type="image/webp">
-                    <source srcset="build/img/trabajo2.jpg" type="image/jpeg">
-                    <img src="build/img/trabajo2.jpg" alt="Nosotros" loading="lazy">
+                <source srcset="build/img/trabajo2.jpg" type="image/jpeg">
+                <img src="build/img/trabajo2.jpg" alt="Nosotros" loading="lazy">
             </div>
         </div>
     </section>
@@ -99,23 +99,30 @@
     <section id="contacto" class="contacto">
         <h1>Contacto</h1>
         <div class="formulario contenedor">
-            <form>
-                <div class="campo">
-                    <label class="campo__label" for="nombre">Nombre y Apellido</label>
-                    <input class="campo__field" type="text" placeholder="Ingresar Nombre" id="nombre">
-                </div>
-                <div class="campo">
-                    <label class="campo__label" for="email">Email</label>
-                    <input class="campo__field" type="email" placeholder="Ingresar Correo" id="email">
-                </div>
-                <div class="campo">
-                    <label class="campo__label" for="mensaje">Mensaje</label>
-                    <textarea class="campo__field campo__field--textarea" placeholder="Cuéntanos sobre tu proyecto" id="mensaje"></textarea>
-                </div>
-                <div class="campo">
-                    <input type="submit" value="Enviar" class="boton">
-                </div>
-            </form>
+            <div class="formulario-imagen">
+                <source srcset="build/img/img1.webp" type="image/webp">
+                <source srcset="build/img/img1.jpg" type="image/jpeg">
+                <img src="build/img/img1.jpg" alt="Nosotros" loading="lazy">
+            </div>
+            <div>
+                <form class="formulario-campos">
+                    <div class="campo">
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" placeholder="Tu Nombre" id="nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Tu Email" id="email">
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea placeholder="Cuéntanos sobre tu proyecto" id="mensaje"></textarea>
+                    </div>
+                    <div class="campo">
+                        <input type="submit" value="Enviar" class="boton">
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
     
