@@ -21,6 +21,12 @@
             max-height: 618.95px;
             width: 100%;
         }
+        transform: scale(1);
+        transition: transform 150ms ease-in-out;
+        
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 }
 
@@ -28,21 +34,25 @@
     background-color: $grisClaro;
     box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
     padding: $separacion / 2;
+    border-radius: 10px;
 
     .campo{
         display: flex;
         flex-direction: column;
     }
-
+    
     label{
+        border-radius: 10px;
         text-transform: uppercase;
         margin-bottom: 1rem;
+        font-weight: $delgada;
     }
     
     input, textarea{
         font-family: $fuente_parrafo;
         padding: 1rem;
         margin-bottom: 3rem;
+        border: none;
     }
 
     textarea{
@@ -53,4 +63,5 @@
 
 .boton{
     @include boton($azul,block);
+    border-radius: 10px;
 }
