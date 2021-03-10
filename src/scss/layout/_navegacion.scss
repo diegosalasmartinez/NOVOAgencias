@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .barra{
     display: flex;
     flex-direction: column;
@@ -14,18 +18,28 @@
 .navegacion{
     display: flex;
     justify-content: space-around;
-    gap: 2rem;
     margin-bottom: 2rem;
-        
+    
     @include tablet{
         gap: $separacion / 3;
         margin-bottom: 0;
     }        
-       
+    
     a{
+        font-family: $fuente_secundaria;
+        font-size: 1.8rem;
         color: $blanco;            
         text-decoration: none;
-        font-size: 1.8rem;
         text-align: center;
+        transform: scale(1);
+        transition: all 150ms ease-in-out;
+        
+        &:not(:last-of-type){
+            margin-right: 2rem;
+        }
+        
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 }

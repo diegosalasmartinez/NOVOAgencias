@@ -1,31 +1,38 @@
 .header{
     background-color: $azulOscuro;
     img{
-        height: 7rem;
+        height: 5rem;
         width: auto;
     }
 }
 
 .logo{
-    padding: $separacion / 3 0;
+    padding: .5rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transform: scale(1);
+    transition: all 150ms ease-in-out;
 
     @include tablet{
     }
 
     a{
-        margin-right: $separacion / 3;
         
-        &:last-of-type{
-            margin-right: 0;
+        &:not(:last-of-type){
+            margin-right: $separacion / 3;
         }
-
+        
         h1{
             color: $blanco;
             font-size: 2.4rem;
+            font-family: $fuente_secundaria;
+            font-weight: $regular;
         }
+    }
+
+    &:hover{
+        transform: scale(1.05);
     }
 }
 

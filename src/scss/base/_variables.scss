@@ -1,5 +1,6 @@
 // Fuentes
 $fuente_principal: 'Future', arial;
+$fuente_secundaria: 'Future P', arial;
 $fuente_parrafo: sans-serif;
 
 // Tamaño de Media Queries
@@ -9,11 +10,16 @@ $desktop: 1024px;
 
 // Colores
 $negro: #000000;
-$azul: #004680;;
-$azulOscuro: #021E47;
 $blanco: #FFFFFF;
-$gris: #e1e1e1;
-$grisOscuro: #333333;
+
+
+$azul: #004680;
+$azulOscuro: #021E47;
+$azulClaro: hsl(233, 62%, 65%);
+
+$gris: #EDF1F7;
+$grisClaro: #F3F3F3;
+$grisOscuro: #e1e1e1;
 
 $separacion: 5rem;
 

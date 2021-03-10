@@ -15,5 +15,12 @@
             height: 100%;
             
         }
+
+        transform: scale(1);
+        transition: transform 150ms ease-in-out;
+        
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 }

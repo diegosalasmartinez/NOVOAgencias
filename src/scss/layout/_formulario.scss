@@ -25,7 +25,8 @@
 }
 
 .formulario-campos{
-    background-color: $gris;
+    background-color: $grisClaro;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
     padding: $separacion / 2;
 
     .campo{

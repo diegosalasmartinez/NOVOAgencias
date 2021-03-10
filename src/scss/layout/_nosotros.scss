@@ -1,9 +1,14 @@
 .nosotros{
+    padding: 3.5rem 0;
+    background-color: $grisClaro;
     p{
         margin-top: 0;
         &:last-child{
             margin-bottom: 0;
         }
+    }
+    h1{
+        margin-top: 0;
     }
 }
 
@@ -23,7 +28,7 @@
     
     .nosotros-imagen{
         padding: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
 
         @include tablet{
             padding: 0 2rem;
@@ -32,19 +37,16 @@
             justify-content: center;
 
         }
+
+        transform: scale(1);
+        transition: transform 150ms ease-in-out;
+        
+        &:hover{
+            transform: scale(1.05);
+        }
     }
     
     .nosotros-info{
         text-align: justify;
-        
-        p{
-            &:last-of-type{
-                margin-bottom: $separacion;
-                
-                @include tablet{
-                    margin-bottom: 0;
-                }
-            }
-        }
     }
 }
